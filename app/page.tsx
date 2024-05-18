@@ -39,8 +39,8 @@ export default function Home() {
   };
 
   return (
-    <div className="flex items-center justify-center">
-  <Card className="py-4 w-full max-w-md h-[50vh] mt-20 md:w-1/2 lg:max-w-xl xl:max-w-2xl">
+    <div className="flex items-center justify-center ">
+  <Card className="py-4 w-full max-w-md h-[60vh] mt-20 md:w-1/2 lg:max-w-xl xl:max-w-2xl ">
     <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
       <h1 className="text-lg uppercase font-bold mt-10 md:text-xl lg:text-2xl">Login</h1>
     </CardHeader>

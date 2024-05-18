@@ -47,7 +47,7 @@ export default function BlogPage() {
 	  const [Products, setProducts] = useState([]);
 	return (
 		<div>
-			<h1 className={title()}>Wellness Mindset</h1>
+			<h3 className={title()}>Wellness Mindset</h3>
 			{diseases && (
 				 <div className="w-full sm:w-1/2 flex  flex-row sm:flex-row gap-4 mb-8 h-max my-10">
 				 <div className="mt-5">

@@ -23,7 +23,7 @@ export default function BlogPage() {
 		  }
 		const reference = collection(db, "Diseases");
 	
-		const dbQuery = query(reference, orderBy("index", "asc"));
+		const dbQuery = query(reference, orderBy("name", "asc"));
 	
 		onSnapshot(dbQuery, (querySnapshot) => {
 		  let i = 1;
@@ -40,6 +40,8 @@ export default function BlogPage() {
 			})
 		  );
 		});
+
+		
 	  }, []);
 
 	  const [Products, setProducts] = useState([]);
@@ -47,16 +49,16 @@ export default function BlogPage() {
 		<div>
 			<h1 className={title()}>Wellness Mindset</h1>
 			{diseases && (
-				 <div className="w-full sm:w-1/2">
-				 <div >
+				 <div className="w-full sm:w-1/2 flex  flex-row sm:flex-row gap-4 mb-8 h-max my-10">
+				 <div className="mt-5">
 				   {diseases.map((disease, id) => ( 
-					<div key={id}>
-					 <Image
-					 width={300}
+					<div key={id} className="mt-10">
+					 <Image	
+					 width={600}
 					 alt="NextUI hero Image"
-					 src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"
+					 src={disease.image}
 				   />
-				   <h1 >{disease.name}</h1>
+				   <h1 className="text-2xl font-bold mt-4">{disease.name}</h1>
 
 				   </div>
 				))}

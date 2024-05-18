@@ -24,7 +24,7 @@ export default function Home() {
         //  console.log(res._tokenResponse.registered);
 		const user = res?.user;
         if (res?.user) {
-          router.push("/about");
+          router.push("/Home");
 
           sessionStorage.setItem("user", true.toString());
         } else if(!res?.user){

@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { auth } from "@/app/firebase/config";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import NextLink from "next/link";
 
 export default function SignUpPage() {
   const [email, setEmail] = useState("");
@@ -63,6 +64,9 @@ export default function SignUpPage() {
           >
           Sign Up
           </Button>
+          <span className="text-default-600 mt-10 md:text-lg lg:text-xl">
+        Already have an account? <NextLink className="text-primary hover:cursor-pointer" href="/">Log in</NextLink>
+      </span>
         </CardBody>
       </Card>
     </div>

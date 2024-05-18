@@ -8,6 +8,7 @@ import { Button } from "@nextui-org/button";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { auth } from "@/app/firebase/config";
+import NextLink from "next/link";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -67,7 +68,7 @@ export default function Home() {
         Login
       </Button>
       <span className="text-default-600 mt-10 md:text-lg lg:text-xl">
-        Are you New? <Link className="text-primary hover:cursor-pointer">Sign Up</Link>
+        Are you New? <NextLink className="text-primary hover:cursor-pointer" href="/signup">Sign Up</NextLink>
       </span>
     </CardBody>
   </Card>

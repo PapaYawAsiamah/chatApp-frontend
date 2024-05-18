@@ -61,7 +61,7 @@ export default function SignUpPage() {
             className="mt-5 bg-blue-500 text-white px-6 py-4 w-full md:w-auto lg:w-auto xl:w-auto"
             onClick={() => handleSignUp()}
           >
-            Login
+          Sign Up
           </Button>
         </CardBody>
       </Card>

@@ -7,12 +7,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyByA_R_FRvA8sEMCwEgTC2_lIP9Wa-mT8U",
-  authDomain: "health-f6385.firebaseapp.com",
-  projectId: "health-f6385",
-  storageBucket: "health-f6385.appspot.com",
-  messagingSenderId: "605789135255",
-  appId: "1:605789135255:web:aaa48a3e372dc5e1a9e4d2"
+  apiKey: "AIzaSyAlRjOkDonF6vEez6TmSU0J0DvR3ai0v6Y",
+  authDomain: "health-e9a4d.firebaseapp.com",
+  projectId: "health-e9a4d",
+  storageBucket: "health-e9a4d.appspot.com",
+  messagingSenderId: "665347606449",
+  appId: "1:665347606449:web:7ad9871238543369d2df90"
 };
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp()
 const auth = getAuth(app)
